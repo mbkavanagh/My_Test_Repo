@@ -1,0 +1,35 @@
+version = 1
+
+[[analyzers]]
+name = "cfn-lint"
+type = "community"
+
+[[analyzers]]
+name = "docker"
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "react",
+    "vue",
+    "angular",
+    "ember",
+    "meteor",
+    "angularjs"
+  ]
+  environment = [
+    "jasmine",
+    "mocha",
+    "vitest",
+    "jest",
+    "cypress",
+    "mongo",
+    "browser",
+    "nodejs",
+    "jquery"
+  ]
+
+[[analyzers]]
+name = "test-coverage"
